@@ -14,17 +14,20 @@
      {% endblock %}
   </head>
   <body>
-    <header>
+ 
+  
+     <nav>
       <div class="header-logo-container">
         <a href="/">
-          <img src="{% static 'images/header-logo.svg' %}" alt="The Ninja Collector Logo" />
+          <img src="{% static 'images/logonav.png' %}" alt="The Ninja Collector" />
         </a>
       </div>
-      <nav>
+     
+
         <ul>
           {% if user.is_authenticated %}
-            <li><a href="{% url 'ninja-index' %}">All Ninjas</a></li>
-            <li><a href="{% url 'weapon-index' %}">All Weapons</a></li>
+            <li><a href="{% url 'ninja-index' %}">Ninjas</a></li>
+            <li><a href="{% url 'weapon-index' %}">Weapons</a></li>
             <li><a href="{% url 'ninja-create' %}">Add a Ninja</a></li>
             <li><a href="{% url 'weapon-create' %}">Add a Weapon</a></li>
             <li><a href="{% url 'about' %}">About</a></li>
@@ -34,18 +37,19 @@
                 <button type="submit">Log out</button>
               </form>
             </li>
+
           {% else %}
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'home' %}">Login</a></li>
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'signup' %}">Sign-Up</a></li>
           {% endif %}
         </ul>
-      </nav>
-    </header>
+  
+  </nav>
     <main>
       {% block content %} 
       {% endblock %}
     </main>
+    
   </body>
 </html>
-

@@ -1,2 +1,85 @@
-/* static/css/base.css  */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: #ffccd5; 
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.header-logo-container img {
+    width: 8%; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2%;
+    align-items: center;
+ 
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: #333; 
+    transition: color 0.3s; 
+    display: block;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #ff6f91; 
+   
+}
+
+#logout-form {
+    display: inline; 
+}
+
+#logout-form button {
+     white-space: nowrap;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+#logout-form button:hover {
+    color: #ff6f91; 
+}
+
+
+
+
+
+
+
+
+
 
