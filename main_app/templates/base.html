@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'images/splash.svg' %}" />
     <title>Ninja Collector</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      {% block head %} 
      {% endblock %}
   </head>
@@ -22,15 +23,16 @@
           <img src="{% static 'images/logonav.png' %}" alt="The Ninja Collector" />
         </a>
       </div>
-     
 
+     
+       <div class='slide'>
         <ul>
           {% if user.is_authenticated %}
             <li><a href="{% url 'ninja-index' %}">Ninjas</a></li>
             <li><a href="{% url 'weapon-index' %}">Weapons</a></li>
             <li><a href="{% url 'ninja-create' %}">Add a Ninja</a></li>
             <li><a href="{% url 'weapon-create' %}">Add a Weapon</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'about' %}"></i>About</a></li>
             <li>
               <form id="logout-form" method="post" action="{% url 'logout' %}">
                 {% csrf_token %}
@@ -44,7 +46,10 @@
             <li><a href="{% url 'signup' %}">Sign-Up</a></li>
           {% endif %}
         </ul>
-  
+      </div>
+
+
+
   </nav>
     <main>
       {% block content %} 

@@ -1,0 +1,30 @@
+
+
+
+
+body {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+
+
+
+
+video {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+   
+    
+}
+
+.logo-container .container {
+    position: relative;
+    height: 100vh;
+    
+}

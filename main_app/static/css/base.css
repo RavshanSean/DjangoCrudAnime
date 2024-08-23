@@ -13,8 +13,8 @@ body {
 }
 
 nav {
-    background-color: #ffccd5; 
-    padding: 1% 2%;
+    background-color: #ffffff; 
+    padding: 1% 1%;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6f91; 
+    color: #6fcaff; 
    
 }
 
@@ -71,8 +71,17 @@ nav ul li a:hover {
 }
 
 #logout-form button:hover {
-    color: #ff6f91; 
+    color: #6fd1ff; 
 }
+
+
+
+
+
+
+
+
+
 
 
 
