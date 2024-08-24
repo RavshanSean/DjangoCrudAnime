@@ -67,15 +67,17 @@ nav ul li a:hover {
     text-align: center;
     background-color: transparent;
     border: none;
-    color: #333;
+    color: #0d8078;
     font-size: 1rem;
     cursor: pointer;
     transition: color 0.3s;
     text-transform: uppercase;
+    filter: drop-shadow(0px 0px 1px rgb(31, 217, 246));
 }
 
 #logout-form button:hover {
     color: #6fd1ff; 
+    filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
 }
 
 

@@ -5,12 +5,15 @@
 {% endblock %} 
 {% block content %}
 
+
+<video id="backgroundVideo" autoplay loop muted>
+  <source src="{% static 'videos/koko.mp4' %}" type="video/mp4" />
+</video>
+
+  
 <section class="page-header">
-    <h1>Ninja List</h1>
+    <h1>Ninja Listtt</h1>
     <img src="{% static 'images/cool-cat.svg' %}" alt="A cool ninja" />
-    <img src="{% static 'images/happy-cat.svg' %}" alt="A happy ninja" />
-    <img src="{% static 'images/teacup-cat.svg' %}" alt="A ninja in a teacup" />
-    <img src="{% static 'images/cat-in-box.svg' %}" alt="A ninja in a box" />
   </section>
   
   <section class="card-container">
@@ -33,9 +36,9 @@
             <p><small>{{ ninja.description }}</small></p>
           </div>
         </a>
-      </div>
     {% endfor %}
   </section>
+</div>
   
   
   {% endblock %}

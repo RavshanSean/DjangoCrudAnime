@@ -1,39 +1,16 @@
-.card-container {
-    padding: 0 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    width: 275px;
-    margin: 10px;
-    border: var(--borders);
-    box-shadow: var(--card-box-shadow);
-  }
-  
-  .card-content {
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .usr-img {
-    width: 100%;
-    border-radius: var(--card-border-radius);
-  }
-  
-  .card > a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-  
-  .card h2 {
-    margin: 10px 0;
-    font-size: var(--font-xl);
-  }
-  
-  .card p {
-    margin: 5px 0;
-    font-size: var(--font-reg);
-  }
-  
+
+video#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+  overflow: hidden;
+}
+
+.page-header, .card-container {
+  position: relative;
+  z-index: 1;
+}
