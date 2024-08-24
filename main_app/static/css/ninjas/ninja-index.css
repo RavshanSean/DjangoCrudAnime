@@ -1,16 +1,115 @@
-
-video#backgroundVideo {
+video#backgroundvideo {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  z-index: -1; 
+  object-fit: cover;
+  z-index: -1;
   overflow: hidden;
 }
 
-.page-header, .card-container {
+#middlevideocontainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  max-width: 100%;
+  height: 100%;
+  z-index: 0;
+  border: 2px solid #000000;
+  box-shadow: 0 0 20px rgb(6, 134, 47), 0 0 20px rgb(8, 160, 48);
+}
+
+video#middleVideo {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.pageheader {
   position: relative;
   z-index: 1;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 2%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-y: auto;
+  height: 100vh; /* Take full viewport height */
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 3;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(6, 134, 47), 0 0 20px rgb(8, 160, 48);
+}
+
+.card-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.card:hover .card-info-overlay {
+  opacity: 1;
+}
+
+h1 {
+  position: relative;
+  top: 1rem;
+  color: #000000;
+  font-weight: 1900;
+  text-align: center;
+  letter-spacing: 1em;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-shadow: 0 0 4px #ffffff, 0 0 4px #ffffff;
 }

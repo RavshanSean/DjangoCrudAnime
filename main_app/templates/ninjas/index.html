@@ -5,40 +5,41 @@
 {% endblock %} 
 {% block content %}
 
-
-<video id="backgroundVideo" autoplay loop muted>
-  <source src="{% static 'videos/koko.mp4' %}" type="video/mp4" />
+<video id="backgroundvideo" autoplay loop muted>
+  <source src="{% static 'videos/dnaa.mp4' %}" type="video/mp4" />
 </video>
 
-  
-<section class="page-header">
-    <h1>Ninja Listtt</h1>
-    <img src="{% static 'images/cool-cat.svg' %}" alt="A cool ninja" />
-  </section>
-  
-  <section class="card-container">
-    {% for ninja in ninjas %}
-      <div class="card">
-        <a href="{% url 'ninja-detail' ninja.id %}">
-          <div class="card-content">
-            <div class="card-img-container">
-              <img
-                src="{% static 'images/sk8r-boi-cat.svg' %}"
-                alt="A skater boy ninja"
-              />
-            </div>
-            <h2 class="card-title">{{ ninja.name }}</h2>
-            {% if ninja.age > 0 %}
-            <p>A {{ ninja.age }} year old {{ ninja.clan }}</p>
-            {% else %}
-            <p>A {{ ninja.clan }} kitten.</p>
-            {% endif %}
-            <p><small>{{ ninja.description }}</small></p>
-          </div>
-        </a>
-    {% endfor %}
-  </section>
+<section class="pageheader">
+  <h1>Ninja Listtt</h1>
+</section>
+
+<div id='middlevideocontainer'>
+  <video id="middleVideo" autoplay loop muted>
+    <source src="{% static 'videos/ninja.mp4' %}" type="video/mp4" />
+  </video>
 </div>
-  
-  
-  {% endblock %}
+
+<section class="card-container">
+  {% for ninja in ninjas %}
+    <div class="card">
+      <a href="{% url 'ninja-detail' ninja.id %}">
+        <div class="card-video-container">
+          <video class="card-video" autoplay loop muted>
+            <source src="{% static 'videos/dna.mp4' %}" type="video/mp4" />
+          </video>
+        </div>
+        <div class='card-info-overlay'>
+          <h2 class="card-title">{{ ninja.name }}</h2>
+          {% if ninja.age > 0 %}
+            <p>A {{ ninja.age }} year old {{ ninja.clan }}</p>
+          {% else %}
+            <p>A {{ ninja.clan }} kitten.</p>
+          {% endif %}
+          <p><small>{{ ninja.description }}</small></p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}

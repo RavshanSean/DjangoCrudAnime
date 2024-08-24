@@ -14,8 +14,7 @@ video {
     overflow: hidden;
     position: absolute;
     height: 100%;
-    /*filter: drop-shadow(10px 10px 10px rgb(27, 199, 225));*/
-    /*z-index: 1;*/
+   
     
 }
 
