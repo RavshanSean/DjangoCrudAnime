@@ -12,7 +12,7 @@ video#backgroundvideo {
 #middlevideocontainer {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   width: 40%;
   max-width: 100%;
@@ -46,7 +46,9 @@ video#middleVideo {
   max-width: 800px;
   margin: 0 auto;
   overflow-y: auto;
-  height: 100vh; /* Take full viewport height */
+  height: 100vh; 
+  margin-left: 45%;
+  top: 10rem
 }
 
 .card {
@@ -58,7 +60,7 @@ video#middleVideo {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   z-index: 3;
-  border: 2px solid #000000;
+  border: 2px solid #4ac90f;
   border-radius: 20px;
   box-shadow: 0 0 20px rgb(6, 134, 47), 0 0 20px rgb(8, 160, 48);
 }
@@ -104,12 +106,13 @@ video#middleVideo {
 
 h1 {
   position: relative;
-  top: 1rem;
+  top: 4rem;
   color: #000000;
   font-weight: 1900;
   text-align: center;
   letter-spacing: 1em;
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  text-shadow: 0 0 4px #ffffff, 0 0 4px #ffffff;
+  text-shadow: 0 0 4px #f00e99, 0 0 4px #ffffff;
+  margin-left: 45%;
 }
