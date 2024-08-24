@@ -13,8 +13,9 @@ body {
 }
 
 nav {
-    background-color: #ffffff; 
-    padding: 1% 1%;
+    background-color: rgb(19, 18, 18); 
+    backdrop-filter: blur(30px);
+    padding: 0% 1%;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -22,6 +23,7 @@ nav {
 
 .header-logo-container img {
     width: 8%; 
+    filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
 }
 
 nav ul {
@@ -40,17 +42,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333; 
+    color: #484747; 
     transition: color 0.3s; 
     display: block;
     line-height: 1.2;
     white-space: nowrap;
     font-size: 1rem;
     text-transform: uppercase;
+    filter: drop-shadow(0px 0px 1px rgb(31, 217, 246));
 }
 
 nav ul li a:hover {
     color: #6fcaff; 
+    filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
    
 }
 
