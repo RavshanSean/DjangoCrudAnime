@@ -1,10 +1,65 @@
-{% extends 'base.html' %} 
-{% block content %}
-<h1>About the Page</h1>
-<hr />
-<p class="page-content">
-  I like long romantic walks down the produce aisle. Also, I am currently job
-  seeking!
-</p>
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+    <script defer src="{% static 'JS/all.js' %}"></script>
 {% endblock %}
+{% block content %}
+  <video id="backgroundvideo" autoplay loop muted>
+    <source src="{% static 'videos/sisafire.mp4' %}" type="video/mp4" />
+  </video>
 
+  <div class='carousel'>
+    <div class='img-box'>
+      <div class='img-list'>
+        <div class='img-slider'>
+
+
+          <!-- Video 1 -->
+          <div class='img-item' style='--i:1;'>
+            <div class='item'>
+              <video src="{% static 'videos/video1.mp4' %}" controls></video>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="img-item" style="--i:2;">
+            <div class="item">
+              <video src="{% static 'videos/video2.mp4' %}" controls></video>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="img-item" style="--i:3;">
+            <div class="item">
+              <video src="{% static 'videos/video3.mp4' %}" controls></video>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="img-item" style="--i:4;">
+            <div class="item">
+              <video src="{% static 'videos/video4.mp4' %}" controls></video>
+            </div>
+          </div>
+
+          <!-- Video 5 -->
+          <div class="img-item" style="--i:5;">
+            <div class="item">
+              <video src="{% static 'videos/video5.mp4' %}" controls></video>
+            </div>
+          </div>
+
+          <!-- Video 6 -->
+          <div class="img-item" style="--i:6;">
+            <div class="item">
+              <video src="{% static 'videos/video6.mp4' %}" controls></video>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -6,7 +6,7 @@
 {% block content %}
 <section class="cat-container">
   <div class="cat-img">
-    <img src="{% static 'images/sk8r-boi-cat.svg' %}" alt="A skater boy ninja" />
+   
   </div>
   <div class="cat-details">
     <h1>{{ ninja.name }}</h1>
@@ -30,13 +30,11 @@
   <section class="toys">
     <div class="subsection-title">
       <h2>Weapons</h2>
-      <img src="{% static 'images/string.svg' %}" alt="A ball of string" />
-      <img src="{% static 'images/mouse.svg' %}" alt="A mouse" />
-      <img src="{% static 'images/fish.svg' %}" alt="A fishy toy" />
+ 
     </div>
 
-      <!-- displaying a cat's toys -->
-  <h3>{{ ninja.name }}'s Toys</h3>
+
+  <h3>{{ ninja.name }}'s Weapon</h3>
   <div class="subsection-content">
     {% if ninja.weapons.count %} 
       {% for weapon in ninja.weapons.all %}
@@ -68,7 +66,7 @@
           </a>
           <form action="{% url 'associate-weapon' ninja.id weapon.id %}" method="post">
             {% csrf_token %}
-            <button type="submit" class="btn submit">Give toy</button>
+            <button type="submit" class="btn submit">Give Weapon</button>
           </form>
         </div>
       {% endfor %} 

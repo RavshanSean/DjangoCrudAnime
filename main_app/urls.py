@@ -16,7 +16,7 @@ urlpatterns = [
     path('weapons/<int:pk>/update/', views.WeaponUpdate.as_view(), name='weapon-update'),
     path('weapons/<int:pk>/delete/', views.WeaponDelete.as_view(), name='weapon-delete'),
     path('ninjas/<int:ninja_id>/associate-weapon/<int:weapon_id>/', views.associate_weapon, name='associate-weapon'),
-    path('ninjas/<int:ninja_id>/remove-weapon/<int:toweapon_id>/', views.remove_weapon, name='remove-weapon'),
+    path('ninjas/<int:ninja_id>/remove-weapon/<int:weapon_id>/', views.remove_weapon, name='remove-weapon'),
     path('accounts/signup/', views.signup, name='signup'),
 
 ]
