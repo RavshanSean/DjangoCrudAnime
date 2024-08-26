@@ -7,7 +7,7 @@ video#backgroundvideo {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: blur(4px);
+    
     
     
   }
@@ -17,7 +17,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;/*remeber this will stop scroll*/
+    overflow: hidden;
 }
 
 .page-header {
@@ -68,15 +68,14 @@ body {
 
 
 
-/*all cantaner heere*/
 
 .form-container-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 10% auto;
+    margin: 7% auto;
     max-width: 1200px;
-    align-items: flex-start;
+   
    
   
 }
@@ -101,30 +100,34 @@ body {
 
 
 .form-container { 
-    width: 40%;/*if u change size after add new css for info user*/
-    background:none;
-    border: 3px solid #a5a5a4;
+    width: 40%;
+    background: rgba(92, 92, 92, 0.9);;
+    border: 1px solid #5f5f20;
     padding: 4%;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(90, 70, 70), 0 0 10px rgb(104, 2, 2),
+    0 0 10px rgb(91, 75, 75), 0 0 10px rgb(104, 2, 2),
+    0 0 10px rgb(98, 53, 53), 0 0 10px rgb(104, 2, 2),
+    0 0 10px rgb(73, 49, 49), 0 0 10px rgb(104, 2, 2);
     border-radius: 10%;
-    height: 33rem;/*also for long or short*/
+    height: 33rem;
     z-index: 1;
     position: relative;
     
-    
-   
 
 }
 
 .leftcontainer {
-    margin-top: -12.3%;
+    margin-top: -8.6%;
     width: 25%; 
     background: none;
     border-bottom-left-radius: 12%;
     border-bottom-right-radius: 12%;
     height: 30rem;
     border: 1px solid #000000;
-    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(187, 0, 0), 0 0 10px rgb(104, 2, 2),
+    0 0 10px rgb(187, 0, 0), 0 0 10px rgb(104, 2, 2),
+    0 0 10px rgb(187, 0, 0), 0 0 10px rgb(104, 2, 2),
+    0 0 10px rgb(187, 0, 0), 0 0 10px rgb(104, 2, 2);
     /*transform: rotate(-5deg); /* Rotate the left container by -5 degrees */
     
     
@@ -132,16 +135,32 @@ body {
 
 
 .rightcontainer {
-    margin-top: 9%;
+    margin-top: 13%;
     width: 25%; 
     background: none;
     height: 30rem;
     border-top-left-radius: 12%;
     border-top-right-radius: 12%;
-    border: 1px solid #ffffff;
-    box-shadow: 0 0 10px rgb(175, 172, 172), 0 0 10px rgb(171, 169, 169);
+    border: 1px solid #a67c00; 
+    box-shadow: 0 0 10px rgb(153, 101, 21),  
+            0 0 10px rgb(139, 117, 65),  
+            0 0 10px rgb(184, 134, 11),  
+            0 0 10px rgb(128, 128, 0),  
+            0 0 10px rgb(169, 169, 0),   
+            0 0 10px rgb(189, 183, 107), 
+            0 0 10px rgb(107, 93, 41),    
+            0 0 10px rgb(143, 120, 47), 
+            0 0 15px rgba(0, 0, 0, 0.6), 
+            0 0 20px rgba(0, 0, 0, 0.8);
+ 
     
 
 }
 
-
+nav {
+    position: relative;
+    z-index: 10;
+    background-color: #000000;
+    
+    
+}
