@@ -28,15 +28,21 @@
     min-height: 100vh;
     background: rgb(78, 170, 227);
     transition: var(--all-transition);
+    overflow: hidden;
 
   }
 
   body::before {
     content: '';
-    position: 50%;
+    position: absolute;
+    left: 3.5%;
     top: 50%;
-    transform: translateY(255, 255, 255, .8);
+    transform: translateY(-50%);
+    width: 800px;
+    height: 800px;
+    background: rgba(255, 255, 255, .8);
     border-radius: 50%;
+    filter: blur(200px);
   }
 
   .img-box {
@@ -88,11 +94,15 @@
 .img-item .item video {
   transform: rotate(calc(360deg / 6 * var(--i))) rotate(120deg);
   filter: blur(8px);
+  width: 200px;
+  height: auto;
   transition: var(--all-transition);
 }
 
 .img-item.active .item video {
   filter: blur(0);
+  width: 300px;
+  height: auto;
 
 }
 
