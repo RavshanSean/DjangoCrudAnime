@@ -2,13 +2,16 @@
 {% load static %}
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script defer src="{% static 'JS/all.js' %}"></script>
 {% endblock %}
 {% block content %}
   <video id="backgroundvideo" autoplay loop muted>
-    <source src="{% static 'videos/sisafire.mp4' %}" type="video/mp4" />
+    <source src="{% static 'videos/.mp4' %}" type="video/mp4" />
   </video>
 
+
+  <body>
   <div class='carousel'>
     <div class='img-box'>
       <div class='img-list'>
@@ -16,7 +19,7 @@
 
 
           <!-- Video 1 -->
-          <div class='img-item' style='--i:1;'>
+          <div class='img-item active' style='--i:1;'>
             <div class='item'>
               <video src="{% static 'videos/video1.mp4' %}" controls></video>
             </div>
@@ -35,7 +38,7 @@
               <video src="{% static 'videos/video3.mp4' %}" controls></video>
             </div>
           </div>
-
+  
           <!-- Video 4 -->
           <div class="img-item" style="--i:4;">
             <div class="item">
@@ -56,10 +59,108 @@
               <video src="{% static 'videos/video6.mp4' %}" controls></video>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
+    
+        <div class='info-box'>
+           <div class='info-item active'>
+            <h2>Bluish Dragon Dual 4 Wireless Controll</h2>
+            <h2>59.99</h2>
+              <div class='colors'>
+               <span class='active'></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+              </div>
+              <p>lorem ipsum dolor sit dada dadad dadada dadadaadad dadadadd</p>
+              <a href='#' class='btn'>Buy Now</a>
+           </div>
+           <div class='info-item'>
+            <h2>Rosa Dragon Dual 4 Wireless Controll</h2>
+            <h2>59.99</h2>
+              <div class='colors'>
+               <span class='active'></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+              </div>
+              <p>lorem ipsum dolor sit dada dadad dadada dadadaadad dadadadd</p>
+              <a href='#' class='btn'>Buy Now</a>
+           </div>
+           <div class='info-item'>
+            <h2>Turmeric Dragon Dual 4 Wireless Controll</h2>
+            <h2>59.99</h2>
+              <div class='colors'>
+               <span class='active'></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+              </div>
+              <p>lorem ipsum dolor sit dada dadad dadada dadadaadad dadadadd</p>
+              <a href='#' class='btn'>Buy Now</a>
+           </div>
+           <div class='info-item'>
+            <h2>Reddish Dragon Dual 4 Wireless Controll</h2>
+            <h2>59.99</h2>
+              <div class='colors'>
+               <span class='active'></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+              </div>
+              <p>lorem ipsum dolor sit dada dadad dadada dadadaadad dadadadd</p>
+              <a href='#' class='btn'>Buy Now</a>
+           </div>
+           <div class='info-item'>
+            <h2>Mirage Dragon Dual 4 Wireless Controll</h2>
+            <h2>59.99</h2>
+              <div class='colors'>
+               <span class='active'></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+              </div>
+              <p>lorem ipsum dolor sit dada dadad dadada dadadaadad dadadadd</p>
+              <a href='#' class='btn'>Buy Now</a>
+           </div>
+           <div class='info-item'>
+            <h2>Algae Dragon Dual 4 Wireless Controll</h2>
+            <h2>59.99</h2>
+              <div class='colors'>
+               <span class='active'></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+              </div>
+              <p>lorem ipsum dolor sit dada dadad dadada dadadaadad dadadadd</p>
+              <a href='#' class='btn'>Buy Now</a>
+           </div>
+        </div>
+
+       <div class='navigation'>
+        <span class='prev-btn'>
+          <i class='bx bx-chevron-left'></i>
+        </span>
+        <span class='next-btn'>
+          <i class='bx bx-chevron-right' ></i>
+        </span>
+       </div>
   </div>
+
+
+
+</body>
 {% endblock %}
