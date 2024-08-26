@@ -1,97 +1,147 @@
 
+video#backgroundvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(4px);
+    
+    
+  }
+
+
 body {
-   
     font-family: Arial, sans-serif;
-    background-color: #000000;
     margin: 0;
     padding: 0;
+    overflow: hidden;/*remeber this will stop scroll*/
 }
 
 .page-header {
     text-align: center;
-    margin-bottom: 30px;
 }
 
-.page-header h1 {
-    color: #333;
-    font-size: 24px;
+
+.form-container input, .form-container select, .form-container textarea, .form-container {
+    font-size: 0.9rem; 
+    padding: 0.5%;
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    line-height: 1.5;
+    text-decoration: none;
+    opacity: 1; 
+    background: rgba(160, 155, 155, 0.5); 
+    color: black;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 10px;
+    width: 80%;;
+    text-shadow: 0 0 6px #3fc8fa;
+    
 }
 
-.page-header img {
-    margin-top: 20px;
-    max-width: 150px;
+
+
+.btn.submit {
+    
+    background: none;
+    color: #000000; 
+    border: 0.5px solid #118bad; 
+    border-radius: 50px;
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 5px rgba(23, 23, 23, 0.3);
+    margin-top: 1rem; 
+    text-shadow: 0 0 6px #3fc8fa;
+    opacity: 8; 
+    background: rgba(255, 254, 254, 0.5); 
+    letter-spacing: 0.1em;
+    margin-left: 9rem;
+
+}
+
+
+
+/*all cantaner heere*/
+
+.form-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10% auto;
+    max-width: 1200px;
+    align-items: flex-start;
+   
+  
+}
+
+
+.leftcontainer, .rightcontainer {
+    width: 25%; 
+    padding: 0;
+    position: relative;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.leftcontainer video, .rightcontainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
 .form-container { 
-    width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    width: 40%;/*if u change size after add new css for info user*/
+    background:none;
+    border: 3px solid #a5a5a4;
+    padding: 4%;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 10%;
+    height: 33rem;/*also for long or short*/
+    z-index: 1;
+    position: relative;
+    
+    
+   
+
 }
 
-.form-container table {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.form-container th, 
-.form-container td {
-    padding: 10px;
-    text-align: left;
-}
-
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="password"],
-.form-container select,
-.form-container textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form-container input[type="text"]:focus,
-.form-container input[type="email"]:focus,
-.form-container input[type="password"]:focus,
-.form-container select:focus,
-.form-container textarea:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+.leftcontainer {
+    margin-top: -12.3%;
+    width: 25%; 
+    background: none;
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+    height: 30rem;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+    /*transform: rotate(-5deg); /* Rotate the left container by -5 degrees */
+    
+    
 }
 
 
-.btn.submit {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-}
+.rightcontainer {
+    margin-top: 9%;
+    width: 25%; 
+    background: none;
+    height: 30rem;
+    border-top-left-radius: 12%;
+    border-top-right-radius: 12%;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px rgb(175, 172, 172), 0 0 10px rgb(171, 169, 169);
+    
 
-.btn.submit:hover {
-    background-color: #0056b3;
 }
 
 
-@media (max-width: 480px) {
-    .form-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .page-header img {
-        max-width: 100px;
-    }
-}

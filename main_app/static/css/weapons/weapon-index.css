@@ -1,0 +1,133 @@
+video#backgroundvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+    filter: blur(5px);
+    
+  }
+  
+  #middlevideocontainer {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-width: 100%;
+    height: 100%;
+    z-index: 0;
+    border: 3px solid #000000;
+    box-shadow: 0 0 20px rgb(228, 59, 3), 0 0 20px rgb(244, 144, 5),
+    0 0 20px rgb(240, 107, 5), 0 0 20px rgb(244, 73, 5),0 0 20px rgb(240, 52, 5), 0 0 20px rgb(244, 33, 5);
+  }
+  
+  video#middleVideo {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+  }
+  
+  .pageheader {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding: 2%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-y: auto;
+    height: 100vh; 
+    margin-left: 45%;
+    top: 5rem
+  }
+  
+  .card {
+    position: relative;
+    width: 500px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 3;
+    border: 2px solid #07b8b8;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(112, 112, 148), 0 0 20px rgb(104, 163, 176);
+    margin-left: 110px;
+  }
+  
+  .card-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    z-index: 3;
+  }
+  
+  .card:hover .card-info-overlay {
+    opacity: 1;
+  }
+  
+  h1 {
+    position: relative;
+    top: 10rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1em;
+    margin-bottom: 1rem;
+    font-size: 4rem; 
+    color: rgb(0, 0, 0);
+    text-shadow: 
+      0 0 10px rgb(255, 255, 255), 
+      0 0 20px rgb(255, 255, 255), 
+      0 0 30px rgb(255, 255, 255), 
+      0 0 40px rgb(255, 250, 250); 
+    margin-left: 55%;
+    -webkit-background-clip: text;
+   
+    
+    
+  }
+  
+  
+  

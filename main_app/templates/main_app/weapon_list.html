@@ -5,20 +5,44 @@
 {% endblock %} 
 {% block content %}
 
-<section class="page-header">
-  <h1>All Ninja Weapons</h1>
-  <img src="{% static 'images/string.svg' %}" alt="A ball of string" />
-  <img src="{% static 'images/mouse.svg' %}" alt="A mouse" />
-  <img src="{% static 'images/post.svg' %}" alt="A scratching post" />
-  <img src="{% static 'images/fish.svg' %}" alt="A fishy toy" />
-</section>
+<video id="backgroundvideo" autoplay loop muted>
+  <source src="{% static 'videos/sisa.mp4' %}" type="video/mp4" />
+</video>
+
+
+
+
+
+
+<div class='container-textbox'>
+  <div class='textbox'>
+     <section class="pageheader">
+       <h1>忍の武器</h1>
+     </section>
+  </div>
+</div>
+
+
+<div id='middlevideocontainer'>
+  <video id="middleVideo" autoplay loop muted>
+    <source src="{% static 'videos/sisisa.mp4' %}" type="video/mp4" />
+  </video>
+</div>
+
+
+
 
 <section class="card-container">
   {% for weapon in weapon_list %}
     <div class="card" style="border-color: {{ weapon.color }}">
       <div class="card-bg" style="background-color: {{ weapon.color }}"></div>
       <a href="{% url 'weapon-detail' weapon.id %}">
-        <div class="card-content">
+        <div class="card-video-container">
+          <video class="card-video" autoplay loop muted>
+            <source src="{% static 'videos/sisa2.mp4' %}" type="video/mp4" />
+          </video>
+        </div>
+        <div class='card-info-overlay'>
           <h2>{{ weapon.name }}</h2>
           <p>A {{ weapon.color }} weapon</p>
         </div>
@@ -26,5 +50,6 @@
     </div>
   {% endfor %}
 </section>
+
 
 {% endblock %}
