@@ -84,17 +84,20 @@
 }
 
 .content {
-    
-        position: relative;
-        width: 20%;
-        max-width: 600px;
-        top: 29rem;
-        padding: 2rem;
-        background: rgba(0, 0, 0, 0.7); 
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),
-        0 0 20px rgb(255, 255, 255); 
-        z-index: 1;
+    position: relative;
+    width: 20%;
+    max-width: 600px;
+    top: 29rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgb(255, 255, 255); 
+    z-index: 1;
+    text-align: center;
+    color:darkcyan;
+    text-shadow: 
+        0 0 5px rgb(4, 251, 251);
     
 }
 
@@ -135,7 +138,7 @@ video#backgroundvideo {
     position: fixed;
     background-color: #f39c12; 
     border: 1px solid #f39c12;
-    box-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12;
+    box-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12,0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12;
     left: 17%; 
     
   }
@@ -144,7 +147,7 @@ video#backgroundvideo {
     position: fixed;
     background-color: #3498db; 
     border: 1px solid #3498db;
-    box-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db;
+    box-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db, 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db;
     right: 17%;
   }
 
