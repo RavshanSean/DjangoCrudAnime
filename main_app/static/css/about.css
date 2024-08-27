@@ -99,7 +99,7 @@
 
 .img-item.active .item video {
   filter: blur(0);
-  width: 495px; /*for portal effect*/
+  width: 495px; 
   height: 120rem;
   background: #000000;
  

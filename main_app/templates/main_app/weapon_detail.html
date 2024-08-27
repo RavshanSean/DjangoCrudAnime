@@ -5,15 +5,40 @@
 {% endblock %} 
 {% block content %}
 
-<div class="card" style="border-color: {{ weapon.color }}">
-  <div class="card-bg" style="background-color: {{ weapon.color }}"></div>
-  <div class="card-content">
-    <h2>{{ weapon.name }}</h2>
-    <p>A {{ weapon.color }} weapon</p>
-  </div>
-</div>
-<a href="{% url 'weapon-update' weapon.id %}" class="btn warn">Edit</a>
-<a href="{% url 'weapon-delete' weapon.id %}" class="btn danger">Delete</a>
+<video id="backgroundvideo" autoplay loop muted>
+  <source src="{% static 'videos/homep.mp4' %}" type="video/mp4" />
+</video>
 
+<div class="form-container-wrapper">
+  <div class="leftcontainer">
+      <video id="middleVideo" autoplay loop muted>
+        <source src="{% static 'videos/left.mp4' %}" type="video/mp4" />
+      </video>
+  </div>
+  
+  
+  <div class="content">
+    <div class="card" style="border-color: {{ weapon.color }}">
+      <div class="card-bg" style="background-color: {{ weapon.color }}"></div>
+      <div class="card-content">
+        <h2>{{ weapon.name }}</h2>
+        <p>A {{ weapon.color }} weapon</p>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <a href="{% url 'weapon-update' weapon.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'weapon-delete' weapon.id %}" class="btn danger">Delete</a>
+    </div>
+  </div>
+  
+  <div class="rightcontainer">
+    <video id="middle-Video" autoplay loop muted>
+      <source src="{% static 'videos/right.mp4' %}" type="video/mp4" />
+    </video>
+  </div>
+
+</div>
 
 {% endblock %}
+

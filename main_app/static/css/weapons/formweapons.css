@@ -8,7 +8,7 @@ video#backgroundvideo {
     object-fit: cover;
     z-index: -1;
     overflow: hidden;
-    filter: blur(8px); /* Add blur effect */
+    filter: blur(8px); 
     
 }
 
@@ -18,7 +18,7 @@ video#backgroundvideo {
 .page-header {
     position: relative;
     z-index: 1;
-    color: rgb(0, 0, 0); /*text japanese*/ 
+    color: rgb(0, 0, 0); 
     
 }
 

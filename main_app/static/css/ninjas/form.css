@@ -102,7 +102,7 @@ body {
     object-fit: cover;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;  
     
 }
 
@@ -116,10 +116,9 @@ body {
     background: rgba(40, 39, 39, 0.9);;
     border: 1px solid #5f5f20;
     padding: 4%;
-    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(113, 112, 112),
-    0 0 10px rgb(91, 75, 75), 0 0 10px rgb(99, 97, 97),
-    0 0 10px rgb(141, 137, 137), 0 0 10px rgb(61, 59, 59),
-    0 0 10px rgb(120, 117, 117), 0 0 10px rgb(167, 166, 166),0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 45px rgb(255, 255, 255), 
+    0 0 60px rgb(255, 255, 255),
+    inset 0 0 30px rgb(249, 249, 249);
     border-radius: 30px;
     height: 33rem;
     z-index: 1;
@@ -134,26 +133,26 @@ body {
 
 @keyframes moveRightUp {
     0% {
-        transform: translateY(110px); /* Start position below the viewport */
+        transform: translateY(110px); 
     }
     50% {
-        transform: translateY(-82px); /* Move up */
+        transform: translateY(-82px);
     }
     100% {
-        transform: translateY(110px); /* End position below the viewport */
+        transform: translateY(110px); 
     }
 }
 
 
 @keyframes moveLeftDown {
     0% {
-        transform: translateY(-30px); /* Start position above the viewport */
+        transform: translateY(-30px);
     }
     50% {
-        transform: translateY(82px); /* Move down */
+        transform: translateY(82px); 
     }
     100% {
-        transform: translateY(-30px); /* End position above the viewport */
+        transform: translateY(-30px); 
     }
 }
 
@@ -170,7 +169,7 @@ body {
     box-shadow:  0 0 5px #fff, /* White glow */
     0 0 10px #fff, 
     0 0 15px #fff, 
-    0 0 20px #00f, /* Blue glow for added effect */
+    0 0 20px #00f, 
     0 0 30px #00f, 
     0 0 40px #00f,
     0 0 50px #00f;
@@ -190,10 +189,10 @@ body {
     height: 40rem;
     border: 1px solid #413f3f;
     filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
-    box-shadow: 0 0 5px #fff, /* White glow */
+    box-shadow: 0 0 5px #fff, 
     0 0 10px #fff, 
     0 0 15px #fff, 
-    0 0 20px #0f0, /* Green glow */
+    0 0 20px #0f0, 
     0 0 30px #0f0, 
     0 0 40px #0f0,
     0 0 50px #0f0; 
