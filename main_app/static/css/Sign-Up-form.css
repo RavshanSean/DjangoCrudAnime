@@ -1,0 +1,120 @@
+
+video#backgroundvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.page-header {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.page-header h1 {
+    margin-left: 45%;
+    font-size: 3rem;
+    margin-top: 8%;
+    color: #ffffff; 
+    text-shadow: 0 0 15px rgb(62, 61, 61), 0 0 30px rgb(145, 143, 143), 0 0 45px rgb(144, 141, 141), 
+    0 0 60px rgb(255, 255, 255),
+    0 0 30px rgb(0, 0, 0);
+}
+
+.form-container {
+    position: absolute; 
+    bottom: 4rem; 
+    right: 7rem; 
+    max-width: 600px; 
+    width: 90%; 
+    height: 400px; 
+    background: rgba(0, 0, 0, 0.1); 
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 45px rgb(255, 255, 255), 
+    0 0 60px rgb(255, 255, 255),
+    inset 0 0 30px rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.form-container input, .form-container select, .form-container textarea {
+    width: 80%; 
+    padding: 10px;
+    margin-bottom: 1.5rem; 
+    border: none;
+    border-radius: 5px;
+    background: none;
+    box-shadow: 0 0 5px rgba(0, 255, 153, 0.3);
+}
+
+.form-container .btn.submit {
+    background: none;
+    color: white;
+    border: solid 1px rgba(0, 128, 0, 0.7);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-shadow: 0 0 10px rgba(207, 203, 203, 0.5);
+    margin-left: 40%;
+}
+
+
+.form-container .btn.submit:hover {
+    background: none; 
+    border: solid 1px rgba(29, 141, 29, 0.7);
+    box-shadow: 0 0 10px rgba(22, 145, 22, 0.7), 0 0 20px rgba(6, 158, 6, 0.5), 
+    0 0 30px rgb(8, 177, 8);
+}
+
+
+.middle-video-container {
+    position: fixed;
+    top: -5%; 
+    left: 10%; 
+    width: 450px;
+    height: 110%; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 45px rgb(255, 255, 255), 
+    0 0 60px rgb(255, 255, 255),
+    inset 0 0 30px rgb(249, 249, 249);
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.middle-video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+
