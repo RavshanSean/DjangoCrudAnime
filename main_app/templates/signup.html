@@ -1,17 +1,28 @@
 {% extends 'base.html' %} 
 {% load static %} 
 {% block head %}
-<link rel="stylesheet" href="{% static 'css/form.css' %}" />
+<link rel="stylesheet" href="{% static 'css/Sign-Up-form.css' %}" />
 {% endblock %} 
 {% block content %}
-<div class="page-header">
-  <h1>Sign Up</h1>
-  <img src="{% static 'images/nerd-cat.svg' %}" alt="A cat using a computer" />
-</div>
+
+<section class='logo-container'>
+<div class="container">
+  <video id='myVideo'  autoplay loop muted><source src="{% static 'videos/dna.mp4' %}" type="video/mp4"/></video>
+
+
+
+
+
+
+
+
+  <section class='logotwo'>
+    <div class='loginpage'>
 {% if error_message %}
   <p class="red-text">{{ error_message }}</p>
 {% endif %}
 <form action="" method="post" class="form-container" autocomplete="off">
+  <h1>Sign Up</h1>
   {% csrf_token %}
   <table>
     {{ form.as_table }}

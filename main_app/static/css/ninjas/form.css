@@ -54,7 +54,6 @@ body {
 .btn, .submit {
     
     background: none;
-    color: #000000; 
     border: 0.5px solid #f8f8f8; 
     border-radius: 50px;
     padding: 10px 20px; 
@@ -67,7 +66,7 @@ body {
     margin-top: 1rem; 
     text-shadow: 0 0 6px #e1e3e4;
     opacity: 8; 
-    background: rgba(255, 254, 254, 0.5); 
+    filter: blur(3);
     letter-spacing: 0.1em;
     align-self: center;
     
@@ -114,13 +113,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 40%;
-    background: rgba(92, 92, 92, 0.9);;
+    background: rgba(40, 39, 39, 0.9);;
     border: 1px solid #5f5f20;
     padding: 4%;
     box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(113, 112, 112),
     0 0 10px rgb(91, 75, 75), 0 0 10px rgb(99, 97, 97),
     0 0 10px rgb(141, 137, 137), 0 0 10px rgb(61, 59, 59),
-    0 0 10px rgb(120, 117, 117), 0 0 10px rgb(167, 166, 166);
+    0 0 10px rgb(120, 117, 117), 0 0 10px rgb(167, 166, 166),0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
     border-radius: 30px;
     height: 33rem;
     z-index: 1;
@@ -135,26 +134,26 @@ body {
 
 @keyframes moveRightUp {
     0% {
-        transform: translateY(10px); /* Start position below the viewport */
+        transform: translateY(110px); /* Start position below the viewport */
     }
     50% {
         transform: translateY(-82px); /* Move up */
     }
     100% {
-        transform: translateY(10px); /* End position below the viewport */
+        transform: translateY(110px); /* End position below the viewport */
     }
 }
 
 
 @keyframes moveLeftDown {
     0% {
-        transform: translateY(-10px); /* Start position above the viewport */
+        transform: translateY(-30px); /* Start position above the viewport */
     }
     50% {
         transform: translateY(82px); /* Move down */
     }
     100% {
-        transform: translateY(-10px); /* End position above the viewport */
+        transform: translateY(-30px); /* End position above the viewport */
     }
 }
 
@@ -167,10 +166,14 @@ body {
     border-bottom-right-radius: 2%;
     height: 40rem;
     border: 1px solid #413f3f;
-    box-shadow: 0 0 10px rgb(249, 248, 248), 0 0 10px rgb(255, 254, 254),
-    0 0 10px rgb(249, 248, 248), 0 0 10px rgb(151, 150, 150),
-    0 0 10px rgb(203, 197, 197), 0 0 10px rgb(176, 175, 175),
-    0 0 10px rgb(145, 142, 142), 0 0 10px rgb(74, 74, 74);
+    filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
+    box-shadow:  0 0 5px #fff, /* White glow */
+    0 0 10px #fff, 
+    0 0 15px #fff, 
+    0 0 20px #00f, /* Blue glow for added effect */
+    0 0 30px #00f, 
+    0 0 40px #00f,
+    0 0 50px #00f;
     animation: moveLeftDown 15s ease-in-out infinite;
     
     
@@ -179,17 +182,21 @@ body {
 
 
 .rightcontainer {
-    margin-top: 6%;
+    margin-top: 8%;
     width: 25%; 
     background: none;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
     height: 40rem;
     border: 1px solid #413f3f;
-    box-shadow: 0 0 10px rgb(249, 248, 248), 0 0 10px rgb(255, 254, 254),
-    0 0 10px rgb(249, 248, 248), 0 0 10px rgb(151, 150, 150),
-    0 0 10px rgb(203, 197, 197), 0 0 10px rgb(176, 175, 175),
-    0 0 10px rgb(145, 142, 142), 0 0 10px rgb(74, 74, 74);
+    filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
+    box-shadow: 0 0 5px #fff, /* White glow */
+    0 0 10px #fff, 
+    0 0 15px #fff, 
+    0 0 20px #0f0, /* Green glow */
+    0 0 30px #0f0, 
+    0 0 40px #0f0,
+    0 0 50px #0f0; 
     animation: moveRightUp 15s ease-in-out infinite;
  
     

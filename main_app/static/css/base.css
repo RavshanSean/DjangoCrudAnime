@@ -80,6 +80,28 @@ nav ul li a:hover {
     filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
 }
 
+h3 {
+    color: #908d8d; 
+    font-size: 2.5rem; 
+    margin: 0; 
+    text-shadow: 
+        0 0 5px #8c8b8b, 
+        0 0 10px #929191, 
+        0 0 15px #888787, 
+        0 0 20px rgb(124, 124, 238), 
+        0 0 10px rgb(113, 113, 244), 
+        0 0 10px rgb(82, 82, 243),
+        0 0 5px rgb(125, 125, 246); 
+    font-family: 'Arial', sans-serif;
+}
+
+
+h3:hover {
+    color: #ffffff; 
+    filter: drop-shadow(0px 0px 1px rgb(27, 199, 225));
+    font-family: 'Arial', sans-serif;
+
+}
 
 
 
