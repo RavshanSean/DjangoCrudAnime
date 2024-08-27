@@ -65,7 +65,7 @@ video#backgroundvideo {
     z-index: 3;
     border: 2px solid #07b8b8;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgb(112, 112, 148), 0 0 20px rgb(104, 163, 176);
+    box-shadow: 0 0 20px rgb(123, 123, 150), 0 0 20px rgb(104, 163, 176);
     margin-left: 110px;
   }
   

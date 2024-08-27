@@ -1,23 +1,36 @@
 {% extends 'base.html' %} 
 {% load static %} 
 {% block head %}
-  <link rel="stylesheet" href="{% static 'css/form.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/weapons/formweapons.css' %}" />
 {% endblock %} 
 {% block content %}
-  <div class="page-header">
-    {% if object %}
-      <h1>Edit {{object.name}}</h1>
-    {% else %}
-      <h1>Add a Weapon</h1>
-    {% endif %}
-    <img src="{% static 'images/nerd-cat.svg' %}" alt="A ninja using a computer" />
-  </div>
-  <form action="" method="post" class="form-container" autocomplete="off">
-    {% csrf_token %}
-    <table>
-      {{ form.as_table }}
-    </table>
-    <button type="submit" class="btn submit">Submit!</button>
-  </form>
+  <video id="backgroundvideo" autoplay loop muted>
+    <source src="{% static 'videos/tryback.mp4' %}" type="video/mp4" />
+  </video>
 
+  <div class="form-container-wrapper">
+    <div class="leftcontainer">
+      <video id="leftVideo" autoplay loop muted>
+        <source src="{% static 'videos/tryback.mp4' %}" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="form-container">
+      <div class="page-header">
+        {% if object %}
+          <h1>Edit {{object.name}}</h1>
+        {% else %}
+          <h1>武器を追加</h1>
+        {% endif %}
+      </div>
+      
+      <form action="" method="post" autocomplete="off">
+        {% csrf_token %}
+        <table>
+          {{ form.as_table }}
+        </table>
+        <button type="submit" class="btn submit">Submit!</button>
+      </form>
+    </div>
+  </div>
 {% endblock %}

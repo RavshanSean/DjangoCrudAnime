@@ -1,0 +1,124 @@
+
+video#backgroundvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+    filter: blur(8px); /* Add blur effect */
+    
+}
+
+
+
+
+.page-header {
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0); /*text japanese*/ 
+    
+}
+
+
+.form-container {
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+    margin-left: 60%; 
+    top: 29rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgb(255, 255, 255); 
+    z-index: 1;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgb(255, 255, 255); 
+    position: absolute; 
+    top: -13rem; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1; 
+    margin: 0; 
+}
+
+
+.form-container input, .form-container select, .form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 85%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    padding-top: 0.5rem;
+    
+}
+
+
+.form-container label {
+    margin-left: 80%;
+    display: block; 
+    color: rgb(213, 210, 210);  
+    margin-bottom: 0.5rem; 
+    text-shadow: 0 0 330px rgb(0, 0, 0), 0 0 10px rgb(63, 62, 62), 0 0 10px rgb(255, 255, 255);
+    
+}
+
+
+.btn.submit {
+    background: none;
+    color: white;
+    border: solid 1px rgba(0, 128, 0, 0.7);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-shadow: 0 0 10px rgba(207, 203, 203, 0.5);
+    margin-left: 40%;
+}
+
+.btn.submit:hover {
+    background: none; 
+    border: solid 1px rgba(29, 141, 29, 0.7);
+    box-shadow: 0 0 10px rgba(22, 145, 22, 0.7), 
+                0 0 20px rgba(6, 158, 6, 0.5), 
+                0 0 30px rgb(8, 177, 8);
+    
+    
+}
+
+
+
+.leftcontainer {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    max-width: 100%;
+    height: 105%;
+    z-index: 0;
+    border: 3px solid #252424;
+    box-shadow: 0 0 20px rgb(0, 0, 0), 0 0 20px rgb(33, 32, 32),
+    0 0 20px rgb(6, 6, 6), 0 0 20px rgb(0, 0, 0),0 0 20px rgb(255, 255, 255), 0 0 20px rgb(43, 39, 39),0 0 20px rgb(33, 32, 32),
+    0 0 20px rgb(6, 6, 6), 0 0 20px rgb(0, 0, 0),0 0 20px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
+}
+
+.leftcontainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+body {
+    overflow: hidden;
+}
