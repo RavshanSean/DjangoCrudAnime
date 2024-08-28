@@ -2,7 +2,7 @@
 {% load static %} 
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/ninjas/ninja-delete.css' %}" />
-
+<div class="circle"></div>
 
 <div class='wrapper'>
   <div class='items'>
@@ -90,12 +90,17 @@
 
 
 
-
+<div class='top-contaner'>
+  <div class='heading'>
 <h2>Are you sure you want to delete {{ ninja.name }}?</h2>
+  </div>
 <form action="" method="post" class="form">
   {% csrf_token %}
+  <div class='button-container'>
   <a href="{% url 'ninja-detail' ninja.id %}" class="btn secondary">Cancel</a>
   <button type="submit" class="btn danger">Yes - Delete!</button>
+  </div>
 </form>
+</div>
 
 {% endblock %}
