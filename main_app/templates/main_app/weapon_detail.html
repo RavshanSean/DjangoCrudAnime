@@ -5,9 +5,14 @@
 {% endblock %} 
 {% block content %}
 
+ 
+<h4>気をつけて危険です</h4>
+
 <video id="backgroundvideo" autoplay loop muted>
   <source src="{% static 'videos/homep.mp4' %}" type="video/mp4" />
 </video>
+
+
 
 <div class="form-container-wrapper">
   <div class="leftcontainer">
@@ -15,8 +20,7 @@
         <source src="{% static 'videos/left.mp4' %}" type="video/mp4" />
       </video>
   </div>
-  
-  
+ 
   <div class="content">
     <div class="card" style="border-color: {{ weapon.color }}">
       <div class="card-bg" style="background-color: {{ weapon.color }}"></div>

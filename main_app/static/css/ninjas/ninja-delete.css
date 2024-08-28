@@ -142,54 +142,6 @@
 }
 
 
-
-/*.top-contaner {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: rotateX(-50%);
-    padding: 20px;
-    text-align: center;
-    z-index: 100;
-
-}
-
-.top-contaner h2 {
-    color: aliceblue;
-    margin-top: 25%;
-    margin-left: -120%;
-    text-shadow: 0 0 5px rgba(89, 89, 89, 0.8),
-    0 0 10px rgba(255, 255, 255, 0.6),
-    0 0 20px rgba(255, 255, 255, 0.7),
-    0 0 30px rgba(255, 255, 255, 0.7),
-    0 0 40px rgba(255, 255, 255, 0.7),
-    0 0 50px rgba(255, 255, 255, 0.7);
-}
-
-.top-contaner .btn {
-    border-radius: 10px;
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 115%;
-    margin-left: -110%;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
-    0 0 10px rgba(255, 255, 255, 0.6),
-    0 0 20px rgba(255, 255, 255, 0.7), /* Red Neon 
-    0 0 30px rgba(255, 255, 255, 0.7),
-    0 0 40px rgba(255, 255, 255, 0.7),
-    0 0 50px rgba(255, 255, 255, 0.7);
-transition: box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.top-contaner .btn.secondary {
-    background-color: #f1f1f1;
-    
-}*/
-
 .heading {
     
     position: absolute;
