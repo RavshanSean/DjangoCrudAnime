@@ -4,7 +4,7 @@
 The Anime App is a web application designed to manage and organize your Ninja and Weapon collection. It allows users to create and manage Ninja lists, add and remove Ninjas and Weapons from these lists, and view details about each Ninja you have. Users can also sign in to access their personalized Weapon and Ninja lists.
 
 ## Getting Started
-- **Deployed App**: [Anime Cap App](http://example.com) 
+- **Deployed App**: [Anime Cap App](https://djangocrudanime-37dd516a374d.herokuapp.com/) 
 - **Planning Materials**: [Planning Documents]([https://trello.com/b/zZYLlTqT/4]) 
 ### Installation
 To run this project locally, follow these steps:
@@ -34,18 +34,17 @@ To run this project locally, follow these steps:
     ```
 ## Attributions
 - **Django**: A high-level Python web framework that simplifies the development of web applications.
-- **Bootstrap**: A front-end framework used for styling the application.
 - **FontAwesome**: Icons used in the application.
 ## Technologies Used
 - **Python**: The programming language used for the backend.
 - **Django**: The web framework used to build the application.
 - **HTML/CSS**: Markup and styling languages used for the frontend.
 - **JavaScript**: Used for any client-side scripting.
-- **SQLite/PostgreSQL**: Database used for storing application data (specify the database you are using).
+- **PostgreSQL**: Database used for storing application data (specify the database you are using).
 ## Next Steps
-- **Mini-games: Will be addded mini-games for ussers.
+- **Mini-games**: Will be addded mini-games for ussers.
 - **Enhance User Interface**: Improve the design and usability of the app with additional CSS styling and responsive design and Animation.
 - **Add Search Functionality**: Implement a search feature to allow users to quickly find ninjas and weapon lists.
-- **Implement Book Recommendations**: Add functionality to recommend ninjas based on user preferences and reading history.
+- **Implement Ninja Recommendations**: Add functionality to recommend ninjas based on user preferences and reading history.
 - **Integrate Third-Party APIs**: Explore integrating APIs for ninja information or user reviews to enhance the app's functionality.
 
