@@ -1,14 +1,23 @@
-{% extends 'base.html' %} 
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/ninjas/ninja-detail.css' %}" />
-{% endblock %} 
+{% endblock %}
 {% block content %}
-<section class="cat-container">
-  <div class="cat-img">
-   
-  </div>
-  <div class="cat-details">
+<div class="main-container">
+ 
+  <video autoplay muted loop class="background-video">
+    <source src="{% static 'videos/nini.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+  <video autoplay muted loop class="left-video-holder">
+    <source src="{% static 'videos/nini.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <section class="content-container">
     <h1>{{ ninja.name }}</h1>
     {% if ninja.age > 0 %}
       <h2>A {{ ninja.age }} year old {{ ninja.clan }}</h2>
@@ -21,62 +30,45 @@
       <a href="{% url 'ninja-update' ninja.id %}" class="btn warn">Edit</a>
       <a href="{% url 'ninja-delete' ninja.id %}" class="btn danger">Delete</a>
     </div>
-  </div>
-</section>
 
-
-
-
-  <section class="toys">
-    <div class="subsection-title">
+    <section class="toys">
       <h2>Weapons</h2>
- 
-    </div>
+      <h4>{{ ninja.name }}'s Weapon</h4>
+      {% if ninja.weapons.count %}
+        {% for weapon in ninja.weapons.all %}
+          <div class="toy-container">
+            <div class="color-block" style="background-color: {{ weapon.color }}"></div>
+            <a href="{% url 'weapon-detail' weapon.id %}">
+              <p>A {{ weapon.color }} {{ weapon.name }}</p>
+            </a>
+            <form action="{% url 'remove-weapon' ninja.id weapon.id %}" method="post">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Remove Weapon</button>
+            </form>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="no-weapons">{{ninja.name}} doesn't have any weapons!</p>
+      {% endif %}
 
-
-  <h3>{{ ninja.name }}'s Weapon</h3>
-  <div class="subsection-content">
-    {% if ninja.weapons.count %} 
-      {% for weapon in ninja.weapons.all %}
-        <div class="toy-container">
-          <div class="color-block" style="background-color: {{ weapon.color }}"></div>
-          <a href="{% url 'weapon-detail' weapon.id %}">
-            <p>A {{ weapon.color }} {{ weapon.name }}</p>
-          </a>
-          <form action="{% url 'remove-weapon' ninja.id weapon.id %}" method="post">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-danger">Remove Weapon</button>
-          </form>
-          
-        </div>
-      {% endfor %} 
-    {% else %}
-      <p class="no-weapons">{{ninja.name}} doesn't have any weapons!</p>
-    {% endif %}
-  </div>
-
-  <h3>Available weapons</h3>
-  <div class="subsection-content">
-    {% if weapons.count %} 
-      {% for weapon in weapons.all %}
-        <div class="toy-container">
-          <div class="color-block" style="background-color: {{ weapon.color }}"></div>
-          <a href="{% url 'weapon-detail' weapon.id %}">
-            <p>A {{ weapon.color }} {{ weapon.name }}</p>
-          </a>
-          <form action="{% url 'associate-weapon' ninja.id weapon.id %}" method="post">
-            {% csrf_token %}
-            <button type="submit" class="btn submit">Give Weapon</button>
-          </form>
-        </div>
-      {% endfor %} 
-    {% else %}
-      <p class="all-toys">{{ninja.name}} already has all the available weapons</p>
-    {% endif %}
-  </div>
-  
+      <h4>Available weapons</h4>
+      {% if weapons.count %}
+        {% for weapon in weapons.all %}
+          <div class="toy-container">
+            <div class="color-block" style="background-color: {{ weapon.color }}"></div>
+            <a href="{% url 'weapon-detail' weapon.id %}">
+              <p>A {{ weapon.color }} {{ weapon.name }}</p>
+            </a>
+            <form action="{% url 'associate-weapon' ninja.id weapon.id %}" method="post">
+              {% csrf_token %}
+              <button type="submit" class="btn submit">Give Weapon</button>
+            </form>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="all-toys">{{ninja.name}} already has all the available weapons</p>
+      {% endif %}
+    </section>
   </section>
-  
 </div>
-
 {% endblock %}

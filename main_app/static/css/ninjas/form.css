@@ -169,10 +169,10 @@ body {
     box-shadow:  0 0 5px #fff, /* White glow */
     0 0 10px #fff, 
     0 0 15px #fff, 
-    0 0 20px #00f, 
-    0 0 30px #00f, 
-    0 0 40px #00f,
-    0 0 50px #00f;
+    0 0 20px rgb(114, 114, 226), 
+    0 0 30px rgb(150, 150, 236), 
+    0 0 40px rgb(184, 184, 246),
+    0 0 50px rgb(178, 178, 240);
     animation: moveLeftDown 15s ease-in-out infinite;
     
     
@@ -192,10 +192,10 @@ body {
     box-shadow: 0 0 5px #fff, 
     0 0 10px #fff, 
     0 0 15px #fff, 
-    0 0 20px #0f0, 
-    0 0 30px #0f0, 
-    0 0 40px #0f0,
-    0 0 50px #0f0; 
+    0 0 20px rgb(201, 232, 201), 
+    0 0 30px rgb(175, 250, 175), 
+    0 0 40px rgb(188, 248, 188),
+    0 0 50px rgb(203, 237, 203); 
     animation: moveRightUp 15s ease-in-out infinite;
  
     
