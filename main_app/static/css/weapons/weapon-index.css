@@ -55,6 +55,7 @@ video#backgroundvideo {
   }
   
   .card {
+   
     position: relative;
     width: 500px;
     height: 150px;
@@ -125,9 +126,22 @@ video#backgroundvideo {
     margin-left: 55%;
     -webkit-background-clip: text;
    
-    
-    
   }
+
+.card-info-overlay h2, 
+.card-info-overlay p {
+  color: white;
+  text-shadow: 
+  0 0 5px rgb(111, 111, 111), 
+  0 0 10px rgb(124, 123, 123), 
+  0 0 20px rgb(121, 120, 120), 
+  0 0 30px white, 
+  0 0 40px white, 
+  0 0 50px white, 
+  0 0 60px white;
+  font-weight: bold;
+
+}
   
   
   
